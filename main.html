@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="main.css">
+    <title>Wlc</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo_container"><img class="primary-icon" src="images/EALogo.jpeg" alt="logo_img"></div>
+        <ul id="nav-list" class="nav_list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#basket">Basket</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#returns">Returns</a></li>
+            <li><a href="#tracking">Tracking</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#help">Need Help Finding Your Remote?</a></li>
+        </ul>
+        <a href="javascript:void(0);" id="menu_button" class="menu_icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main class="main_section">
+        <div class="main_content">
+            <p class="header_text_1">ORIGINAL</p>
+            <p class="header_text_2">VIZIO REMOTE</p>
+            <p class="header_text_3">CONTROLS</p>
+            <p class="text_line1">In Business Since 1987 With Over 400,000 Remotes In Stock!</p>
+            <div class="search_input_2">
+                <!-- <p>Search For Your TV Model # Or Remote Model Here</p> -->
+                <input type="text" placeholder="Search For Your TV Model # Or Remote Model Here">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <p class="line_3">You Can Find Your Model # On The Back Of Your Vizio TV<br/> Or In Your Vizio TV Owners Manual</p>
+            <p class="line_4">Most Orders Ship The Same Day</p>
+            <p>30 Day No Questions Asked Return Policy</p>
+        </div>
+        <div class="image_section">
+            <img class="vizio_text" src="images/viz_remote.jpg" alt="vizio">
+            <img class="vizio_remote" src="images/Vizio-Universal.jpeg" alt="Vizio remote">
+        </div>
+    </main>
+
+
+
+
+
+    <script>
+        const toggleButton = document.getElementById("menu_button")
+        const navList = document.getElementById("nav-list")
+
+        toggleButton.addEventListener('click', () => {
+            navList.classList.toggle('active')
+        })
+
+
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

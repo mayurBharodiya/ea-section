@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto","Poppins";
+}
+
+.navbar {
+    height: 75px;
+
+    /* background-color: #999; */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+}
+
+.primary-icon {
+    height: 100%;
+}
+
+.navbar a {
+    color: #888;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: rgb(30, 30, 157);
+}
+
+.nav_list {
+    list-style-type: none;
+}
+
+.nav_list li:nth-last-child(1) a {
+    color: #059fe5;
+}
+.nav_list li:nth-last-child(1) a:hover {
+    color: rgb(30, 30, 157);
+}
+
+.nav_list li {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.menu_icon {
+    display: none;
+}
+.menu_icon i {color: black;}
+
+
+
+
+
+
+
+
+
+/* main section */
+
+.main_section {
+    margin-top: 10px;
+    height: 100vh;
+    background-image: url('./images/lg_bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    overflow-x: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main_section .image_section {
+ width: 20%;
+ max-height: 100vh;
+ /* background-color: red; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.image_section img.vizio_text {
+    width: 250px;
+    margin-top: -60px;
+}
+.image_section img.vizio_remote {
+    /* margin-top: -100px; */
+    width: 120px;
+}
+
+.main_section .main_content {
+    width: 60%;
+    /* margin-top: 80px; */
+    color: white;
+    /* background-color: green; */
+    text-align: center;
+}
+.image_section {width: 50%;}
+.header_text_1, .header_text_2, .header_text_3 {
+    font-size: 52px;
+    font-weight: bold;
+    text-shadow: 3px 4px 4px #094f6e;
+}
+.header_text_2 {margin-top: -12px;}
+.header_text_3 {margin-top: -12px;}
+.text_line1 {
+    margin-top: 30px;
+}
+.search_input_2 {
+    background-color: white;
+    color: #059fe5;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    height: 45px;
+    width: 70%;
+    max-width: 100%;
+    margin: 30px auto 0px;
+    text-align: center;
+    border-radius: 30px;
+}
+.search_input_2 input[type="text"] {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    /* background-color: red; */
+    color: #059fe5;
+    font-weight: bold;
+    outline: none;
+}
+::placeholder {
+    color: #059fe5;
+    font-weight: bold;
+}
+.line_3 {
+    margin-top: 20px;
+}
+.line_4 {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 768px) {
+    /* .navbar {
+        margin-bottom: 100px;
+    } */
+    .main_section {
+        height: 100vh;
+        background-image: url('/images/Vizio-Universal.jpeg') !important;
+        /* background-color: #ff0000; */
+        background-color: rgba(5, 159, 229,0.7);
+        background-repeat: no-repeat;
+        background-position: center !important;
+        background-size: contain;
+        overflow-x: hidden;
+    
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: flex-start; */
+    }   
+    .main_section .main_content {
+        margin-top: 100px;
+        width: 100vw;
+        font-weight: bold;
+    }
+    .main_section .image_section {display: none;}
+}
+
+
+@media all and (max-width: 1024px) {
+    .main_section {
+        margin-top: 10px;
+        height: 100vh;
+        background-image: url('./images/md_bg.svg');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+        overflow-x: hidden;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }   
+}
+
+@media all and (max-width: 1100px) {
+    .menu_icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 2px 20px 44px #444;
+    }
+    .nav_list {display: none;}
+    .nav_list li {
+        display: block;
+        text-align: center;
+        width: 100vw;
+        padding: 20px 0px;
+        /* border-top: 1px solid #999; */
+    }
+    .primary-icon {
+        height: 70px;
+    }
+    .logo_container {
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .active {
+        display: block;
+    }
+}
