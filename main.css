@@ -63,6 +63,7 @@ body {
 /* main section */
 
 .main_section {
+    margin-top: 10px;
     height: 100vh;
     background-image: url('./images/lg_bg.svg');
     background-repeat: no-repeat;
