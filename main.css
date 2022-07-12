@@ -87,7 +87,7 @@ body {
 }
 .image_section img.vizio_text {
     width: 250px;
-    margin-top: -60px;
+    margin-top: -40px;
 }
 .image_section img.vizio_remote {
     /* margin-top: -100px; */
@@ -181,6 +181,7 @@ body {
     .main_section .main_content {
         margin-top: 100px;
         width: 100vw;
+        padding: 0px 20px;
         font-weight: bold;
     }
     .main_section .image_section {display: none;}
